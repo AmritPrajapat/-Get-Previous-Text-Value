@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { strict } from 'assert';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'inputOutDirproj';
+  Messagesendbychild : string ="Hi I am Parent"; 
+outputValue : string;
+
+
+msg : string="enter New text";
+
+  getoutput(value)
+  {
+    this.outputValue=value;
+   console.log(value);
+  }
+
 }

@@ -1,0 +1,19 @@
+<p>child works!</p>
+{{product | json }}
+Child Entered :- {{myinput}}
+
+<br><br>
+<button (click)=sendOutPut()>Send data</button>
+
+<button (click)='getValueUsingId()'>Get data By Value</button>
+
+<br><br>
+
+
+<table>
+    <tr *ngFor ="let pro of product">
+        <td>{{pro.userId}}</td>
+        <td>{{pro.id}}</td>
+        <td>{{pro.title}}</td>
+    </tr>
+</table>
